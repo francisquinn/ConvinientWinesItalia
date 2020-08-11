@@ -1,33 +1,48 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About'
-import Contact from '../views/Contact'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
+import Contact from "../views/Contact";
+import Services from "../views/Services";
+import Wines from "../views/Wines";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-  const routes = [
+const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
+    path: "/services",
+    name: "Services",
+    component: Services,
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact
-  }
-]
+    path: "/wines",
+    name: "Wines",
+    component: Wines,
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+  scrollBehavior: function(to, from, savedPosition) {
+    if (to.hash) {
+      return { selector: to.hash };
+    } else if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
+});
 
-export default router
+export default router;

@@ -1,13 +1,15 @@
 <template>
-  <h1>this the the contact page</h1>
+  <ContactForm />
 </template>
 
 <script>
+import ContactForm from "@/components/ContactForm";
 export default {
-
-}
+  components: {
+    ContactForm,
+  },
+};
 </script>
 
 <style>
-
 </style>
