@@ -1,7 +1,10 @@
 <template>
   <v-app id="App">
     <Header></Header>
-    <v-main class="mx-7 my-2">
+    <v-main v-if="`${this.$vssWidth}` > 600" class="mx-7 my-2">
+      <router-view></router-view>
+    </v-main>
+    <v-main v-if="`${this.$vssWidth}` <= 600" class="mx-4 my-2">
       <router-view></router-view>
     </v-main>
     <Footer></Footer>
@@ -11,6 +14,7 @@
 <script>
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import VueScreenSize from "vue-screen-size";
 export default {
   name: 'App',
 
@@ -22,6 +26,7 @@ export default {
   data: () => ({
     //
   }),
+  mixins: [VueScreenSize.VueScreenSizeMixin],
 };
 </script>
 
