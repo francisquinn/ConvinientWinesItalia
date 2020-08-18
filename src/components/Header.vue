@@ -1,7 +1,7 @@
 <template>
   <nav>
     <!-- Large screen Laptop / Tablet -->
-    <v-app-bar app fixed color="grey" flat v-if="`${this.$vssWidth}` > 600">
+    <v-app-bar elevate-on-scroll app fixed color="grey" v-if="`${this.$vssWidth}` > 600">
       <span>(Logo) {{this.$vssWidth}}</span>
       <v-spacer></v-spacer>
       <div class="pa-2" v-for="page in pages" :key="page.text">
@@ -12,7 +12,7 @@
     </v-app-bar>
 
     <!-- Small screen Phone -->
-    <v-app-bar app fixed color="grey" flat v-if="`${this.$vssWidth}` <= 600">
+    <v-app-bar app fixed color="grey" elevate-on-scroll v-if="`${this.$vssWidth}` <= 600">
       <v-app-bar-nav-icon class="white--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <span>(Logo) {{this.$vssWidth}}</span>
     </v-app-bar>

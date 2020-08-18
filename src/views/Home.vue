@@ -1,37 +1,45 @@
 <template>
   <div>
-    <HomeTitle></HomeTitle>
+    <HomeLogoTitle></HomeLogoTitle>
     <br>
-    <HomeTextDisplay></HomeTextDisplay>
+    <HomeTextDisplay :info="Data"></HomeTextDisplay>
     <div id="about">
-      <About></About>
+      <About :info="Data"></About>
     </div>
     <br />
     <br />
     <br />
     <br />
-    <HomeServices></HomeServices>
+    <HomeServices :info="Data"></HomeServices>
     <br>
-    <HomeWines></HomeWines>
+    <HomeWines :info="Data"></HomeWines>
   </div>
 </template>
 
 <script>
-import HomeTitle from "@/components/Home/HomeTitle";
+import HomeLogoTitle from "@/components/Home/HomeLogoTitle";
 import HomeTextDisplay from '@/components/Home/HomeTextDisplay'
 import HomeServices from "@/components/Home/HomeServices";
 import HomeWines from '@/components/Home/HomeWines'
 import About from "@/components/About";
+import Data from "../data/data"
 export default {
   name: "Home",
   components: {
-    HomeTitle,
+    HomeLogoTitle,
     HomeTextDisplay,
     HomeServices,
     HomeWines,
-    About,
+    About
   },
+  data: () => ({
+    Data
+  })
 };
 </script>
 <style scoped>
+#about {
+  padding: 0;
+  margin: 0;
+}
 </style>

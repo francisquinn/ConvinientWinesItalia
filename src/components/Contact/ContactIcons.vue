@@ -1,36 +1,32 @@
 <template>
   <v-container class="amber">
-      <v-row class="pink">
-        <v-col cols="12" sm="6" md="6" lg="6">
-          <v-card>
-            <span>(icon) + email</span>
-          </v-card>
+    <v-row class="pink">
+      <v-col cols="12" sm="6" md="6" lg="6">
+        <v-card class="pa-2">
+          <span>(icon) + email</span>
           <v-divider></v-divider>
-          <v-card>
-            <span>(icon) + Phone</span>
-          </v-card>
-        </v-col>
-        <v-col cols="12" sm="6" md="6" lg="6">
-          <v-card>
-            <p>address here</p>
-            <p>here</p>
-            <p>and here</p>
-          </v-card>
-        </v-col>
-      </v-row>
+          <span>(icon) + Phone</span>
+        </v-card>
+      </v-col>
+      <v-col cols="12" sm="6" md="6" lg="6">
+        <v-card class="pa-2" flat>
+          <p>Via G.D'Annunzio 28</p>
+          <p>Biancade</p>
+          <p>31056 Treviso (TV)</p>
+          <p>Italia</p>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
-p{
+p {
   padding: 0;
   margin: 0;
 }
-
 </style>

@@ -1,0 +1,91 @@
+{
+    "home_paragraph": "(Name of company) specializes in supplying you with the best quality Italian wines with a <b>One-Stop Solution</b>",
+    "home_bullet_points": [
+        {
+            "id": 1,
+            "point": "One order collection point"
+        },
+        {
+            "id": 2,
+            "point": "One invoice/administration"
+        },
+        {
+            "id": 3,
+            "point": "One contact person for everything"
+        },
+        {
+            "id": 4,
+            "point": "One comprehensive wine catalogue"
+        }
+    ],
+    "home_service_text": "Some text about the service page",
+    "home_service_picture": "/service-home.jpg",
+    "home_wine_text": "some text about the wine page",
+    "home_wine_picture": "/wine-bottle-blur.jpg", 
+    "about": "(company name) was founded in 2005. Trades worldwide supplying all distribution channels from supermarkets to HO. RE. CA chain.",
+    "services": [
+        {
+            "id": 1,
+            "account_services":[
+                {
+                    "id": 1,
+                    "service": "Your personal account manager"
+                },
+                {
+                    "id": 2,
+                    "service": "Single invoice"
+                },
+                {
+                    "id": 3,
+                    "service": "Single admin"
+                },
+                {
+                    "id": 4,
+                    "service": "Single logistics platform"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "language_services":[
+                {
+                    "id": 1,
+                    "service":  "Fluent English speaking"
+                }
+            ],
+            "picture": "/uk.png"
+        },
+        {
+            "id": 3,
+            "wine_services": [
+                {
+                    "id": 1,
+                    "service": "Large Italian wine portfolio"
+                },
+                {
+                    "id": 2,
+                    "service": "Wines from Entry level to Internation prize winners"
+                }
+            ]
+        },
+        
+        
+        
+        {
+            "id": 8,
+            "service": "Flexable order quantities"
+        },
+        {
+            "id": 9,
+            "service": "Excellent price/quality delivery"
+        },
+        {
+            "id": 10,
+            "service": "Complete supply chain projects"
+        },
+        {
+            "id": 11,
+            "service": "Your private label project"
+        }
+    ]
+}
