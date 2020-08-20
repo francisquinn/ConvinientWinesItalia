@@ -1,10 +1,7 @@
 <template>
   <v-app id="App">
     <Header></Header>
-    <v-main v-if="`${this.$vssWidth}` > 600" class="mx-7 my-2">
-      <router-view></router-view>
-    </v-main>
-    <v-main v-if="`${this.$vssWidth}` <= 600" class="mx-4 my-2">
+    <v-main class="my-2">
       <router-view></router-view>
     </v-main>
     <br>
@@ -32,6 +29,12 @@ export default {
 </script>
 
 <style>
+#background-grape{
+  background-color: #6f1d32;
+}
+#text-grape{
+  color: #6f1d32;
+}
 @font-face {
   font-family: "Playfair";
   src: url("/PlayfairDisplay-Regular.ttf");
@@ -48,7 +51,8 @@ export default {
 }
 #playfair-semibold-it{
   font-family: Playfair semi-bold it;
-  font-size: 30px;
+  font-size: 40px;
+  color: #6f1d32;
 }
 
 </style>

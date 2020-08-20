@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pink">
+  <v-container fluid class="white">
       <v-row>
         <v-col class="text-center">
           <span>(Logo + Name here)</span>

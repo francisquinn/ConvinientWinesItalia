@@ -1,16 +1,20 @@
 <template>
   <div>
     <!-- Large screen text to the left, picture to the right -->
-    <v-container v-if="`${this.$vssWidth}` > 600" class="purple about_anchor">
-      <v-row class="red">
-        <v-col>
-          <span>About</span>
+    <v-container v-if="`${this.$vssWidth}` > 600" class="about_anchor">
+      <v-row>
+        <v-col class="text-center">
+          <v-card flat class="pa-2">
+            <v-divider></v-divider>
+            <span class="pa-3" id="playfair-semibold-it">About</span>
+            <v-divider></v-divider>
+          </v-card>
         </v-col>
       </v-row>
-      <v-row class="blue">
+      <v-row>
         <v-col cols="12" sm="6" md="6" lg="6" order="first">
-          <v-card>
-            <span>{{info.about}}</span>
+          <v-card flat class="pa-2">
+            <span id="playfair-regular">{{info.about}}</span>
           </v-card>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="6" order="last">
@@ -22,16 +26,20 @@
     </v-container>
 
     <!-- Small screen picture first, text last -->
-    <v-container v-if="`${this.$vssWidth}` <= 600"  class="purple about_anchor">
-      <v-row class="red">
-        <v-col>
-          <span>About</span>
+    <v-container v-if="`${this.$vssWidth}` <= 600" class="about_anchor">
+      <v-row>
+        <v-col class="text-center">
+          <v-card flat class="pa-2">
+            <v-divider></v-divider>
+            <span class="pa-3" id="playfair-semibold-it">About</span>
+            <v-divider></v-divider>
+          </v-card>
         </v-col>
       </v-row>
-      <v-row class="blue">
+      <v-row>
         <v-col cols="12" sm="6" md="6" lg="6" order="last">
-          <v-card>
-            <span>About text</span>
+          <v-card flat class="pa-2">
+            <span id="playfair-regular">{{info.about}}</span>
           </v-card>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="6" order="first">
@@ -49,8 +57,8 @@ import VueScreenSize from "vue-screen-size";
 export default {
   props: {
     info: {
-      type: Object
-    }
+      type: Object,
+    },
   },
   mixins: [VueScreenSize.VueScreenSizeMixin],
 };

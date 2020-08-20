@@ -3,19 +3,19 @@
     "home_bullet_points": [
         {
             "id": 1,
-            "point": "One order collection point"
+            "point": "<b>One</b> order collection point"
         },
         {
             "id": 2,
-            "point": "One invoice/administration"
+            "point": "<b>One</b> invoice/administration"
         },
         {
             "id": 3,
-            "point": "One contact person for everything"
+            "point": "<b>One</b> contact person for everything"
         },
         {
             "id": 4,
-            "point": "One comprehensive wine catalogue"
+            "point": "<b>One</b> comprehensive wine catalogue"
         }
     ],
     "home_service_text": "Some text about the service page",

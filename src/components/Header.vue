@@ -1,7 +1,7 @@
 <template>
   <nav>
     <!-- Large screen Laptop / Tablet -->
-    <v-app-bar elevate-on-scroll app fixed color="grey" v-if="`${this.$vssWidth}` > 600">
+    <v-app-bar elevate-on-scroll app fixed color="white" v-if="`${this.$vssWidth}` > 600">
       <span>(Logo) {{this.$vssWidth}}</span>
       <v-spacer></v-spacer>
       <div class="pa-2" v-for="page in pages" :key="page.text">
@@ -12,24 +12,24 @@
     </v-app-bar>
 
     <!-- Small screen Phone -->
-    <v-app-bar app fixed color="grey" elevate-on-scroll v-if="`${this.$vssWidth}` <= 600">
-      <v-app-bar-nav-icon class="white--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar app fixed color="white" elevate-on-scroll v-if="`${this.$vssWidth}` <= 600">
+      <v-app-bar-nav-icon id="text-grape" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <span>(Logo) {{this.$vssWidth}}</span>
     </v-app-bar>
 
     <!-- Drawer -->
-    <v-navigation-drawer temporary v-model="drawer" app>
+    <v-navigation-drawer id="background-grape" temporary v-model="drawer" app>
       <v-list-item-title class="pa-3">
-        <span>(Logo)</span>
+        <span class="white--text">(Logo)</span>
       </v-list-item-title>
       <v-divider></v-divider>
       <v-list>
         <v-list-item v-for="page in pages" :key="page.text" router :to="page.route">
           <v-list-item-icon>
-            <v-icon>{{ page.icon }}</v-icon>
+            <v-icon class="white--text">{{ page.icon }}</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title id="playfair-regular" class="black--text">{{page.text}}</v-list-item-title>
+            <v-list-item-title id="playfair-regular" class="white--text">{{page.text}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -38,7 +38,7 @@
           <v-card-text class="text-center">
             <span id="date">
               {{ new Date().getFullYear() }} —
-              <strong>WinExport Italia</strong>
+              <strong>(name of company)</strong>
             </span>
           </v-card-text>
         </v-card>
@@ -76,12 +76,13 @@ export default {
 }
 #nav_link{
   font-family: Playfair;
+  color: #6f1d32;
 }
 #nav_link:hover{
   color: black;
 }
 .router-link-exact-active{
   font-weight: 700;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #6f1d32;
 }
 </style>
