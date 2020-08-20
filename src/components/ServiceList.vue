@@ -2,7 +2,7 @@
   <v-container class="purple">
     <v-row class="yellow">
       <v-col>
-        <span>Services</span>
+        <span class="pa-3" id="playfair-semibold-it">Services</span>
       </v-col>
     </v-row>
     <!-- Account manager -->
@@ -15,8 +15,8 @@
           <v-col class="lime text-center" cols="1" sm="1" md="1" lg="1">
             <v-icon class="blue">{{arrow}}</v-icon>
           </v-col>
-          <v-col class="red" cols="10" sm="11" md="9" lg="9">
-            <span>{{serv.service}}</span>
+          <v-col class="red" cols="10" sm="10" md="9" lg="9">
+            <span id="playfair-regular">{{serv.service}}</span>
           </v-col>
         </v-row>
       </v-col>
@@ -33,7 +33,7 @@
             <v-icon>{{arrow}}</v-icon>
           </v-col>
           <v-col class="red" cols="10" sm="11" md="9" lg="9">
-            <span>{{serv.service}}</span>
+            <span id="playfair-regular">{{serv.service}}</span>
           </v-col>
         </v-row>
       </v-col>
@@ -50,7 +50,7 @@
             <v-icon>{{arrow}}</v-icon>
           </v-col>
           <v-col class="red" cols="10" sm="11" md="9" lg="9">
-            <span>{{serv.service}}</span>
+            <span id="playfair-regular">{{serv.service}}</span>
           </v-col>
         </v-row>
       </v-col>
@@ -60,7 +60,7 @@
 
 <script>
 import VueScreenSize from "vue-screen-size";
-import { mdiArrowRight } from "@mdi/js";
+import { mdiChevronRight } from '@mdi/js';
 export default {
   props: {
     info: {
@@ -68,7 +68,7 @@ export default {
     },
   },
   data: () => ({
-    arrow: mdiArrowRight,
+    arrow: mdiChevronRight,
   }),
   mixins: [VueScreenSize.VueScreenSizeMixin],
 };

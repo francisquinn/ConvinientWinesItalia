@@ -48,7 +48,7 @@
 
 <script>
 import VueScreenSize from "vue-screen-size";
-import { mdiArrowRight } from "@mdi/js";
+import { mdiChevronRight } from '@mdi/js'; 
 export default {
   props: {
     info: {
@@ -56,7 +56,7 @@ export default {
     },
   },
   data: () => ({
-    arrow: mdiArrowRight,
+    arrow: mdiChevronRight,
   }),
   mixins: [VueScreenSize.VueScreenSizeMixin],
 };
@@ -72,9 +72,11 @@ ol {
 }
 #home_paragraph_large {
   font-size: 35px;
+  font-family: Playfair;
 }
 #home_bullet_points_large {
   font-size: 20px;
+  font-family: Playfair;
 }
 
 #home_paragraph_small {

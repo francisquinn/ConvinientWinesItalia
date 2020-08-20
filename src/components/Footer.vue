@@ -32,9 +32,11 @@
           <span>(Logo + name here)</span>
         </v-card>
       </v-col>
-      <v-col cols="12" sm="12" md="12" lg="12">
-        <v-card>
-          <span>copy</span>
+      
+      <v-col class="text-center" cols="12" sm="12" md="12" lg="12">
+        <v-divider class="red"></v-divider>
+        <v-card class="black pa-3">
+          <span>copyright</span>
         </v-card>
       </v-col>
     </v-row>
@@ -64,5 +66,6 @@ export default {
 p {
   padding: 0;
   margin: 0;
+  font-family: Playfair;
 }
 </style>

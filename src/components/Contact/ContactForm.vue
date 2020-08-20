@@ -10,15 +10,15 @@
     <form class="red pa-5" action="https://formspree.io/mdowjzol" method="POST">
       <v-row class="white">
         <v-col cols="12" sm="6" md="6" lg="6">
-          <input id="name" autocomplete="off" type="text" name="name" placeholder="name" required />
+          <input id="name" autocomplete="off" type="text" name="name" placeholder="Full name *" required />
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="6">
-          <input id="email" autocomplete="off" type="email" name="_replyto" placeholder="email" required />
+          <input id="email" autocomplete="off" type="email" name="_replyto" placeholder="Email *" required />
         </v-col>
       </v-row>
       <v-row class="orange">
         <v-col>
-          <textarea name="message" autocomplete="off" placeholder="enter your message" required />
+          <textarea name="message" autocomplete="off" placeholder="Message *" required />
         </v-col>
       </v-row>
       
@@ -41,6 +41,7 @@ input {
   border: 1px solid grey;
   border-radius: 2px;
   width: 100%;
+  font-family: Playfair;
 }
 textarea {
   padding: 5px;
@@ -49,5 +50,6 @@ textarea {
   resize: none;
   width: 100%;
   height: 120px;
+  font-family: Playfair;
 }
 </style>

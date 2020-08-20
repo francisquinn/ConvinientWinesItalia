@@ -3,7 +3,7 @@
     <HomeLogoTitle></HomeLogoTitle>
     <br>
     <HomeTextDisplay :info="Data"></HomeTextDisplay>
-    <div id="about">
+    <div class="orange" id="about">
       <About :info="Data"></About>
     </div>
     <br />

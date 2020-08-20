@@ -29,7 +29,7 @@
             <v-icon>{{ page.icon }}</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title class="black--text">{{page.text}}</v-list-item-title>
+            <v-list-item-title id="playfair-regular" class="black--text">{{page.text}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -74,7 +74,9 @@ export default {
   color: white;
   padding: 5px;
 }
-
+#nav_link{
+  font-family: Playfair;
+}
 #nav_link:hover{
   color: black;
 }

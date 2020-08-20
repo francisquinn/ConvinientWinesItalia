@@ -25,7 +25,7 @@
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="5" order="last">
           <v-card>
-            <v-img :src="info.home_service_picture"></v-img>
+            <v-img :src="info.home_service_picture" :lazy-src="info.home_service_picture"></v-img>
           </v-card>
         </v-col>
       </v-row>
@@ -56,7 +56,7 @@
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="6" order="first">
           <v-card>
-            <span>picture services</span>
+            <v-img :src="info.home_service_picture" :lazy-src="info.home_service_picture"></v-img>
           </v-card>
         </v-col>
       </v-row>
