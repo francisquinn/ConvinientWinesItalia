@@ -1,55 +1,118 @@
 <template>
-  <v-container class="pink">
-    <v-row class="blue">
+  <v-container>
+    <v-row>
       <v-col class="text-center">
-        <span>Contact us</span>
+        <v-card flat class="pa-2">
+          <v-divider></v-divider>
+          <span class="pa-3" id="playfair-semibold-it">Contact</span>
+          <v-divider></v-divider>
+        </v-card>
       </v-col>
     </v-row>
 
     <!-- Formspree contact form -->
-    <form class="red pa-5" action="https://formspree.io/mdowjzol" method="POST">
-      <v-row class="white">
+    <form action="https://formspree.io/mdowjzol" method="POST">
+      <v-row>
         <v-col cols="12" sm="6" md="6" lg="6">
-          <input id="name" autocomplete="off" type="text" name="name" placeholder="Full name *" required />
+          <input
+            id="name"
+            autocomplete="off"
+            type="text"
+            name="name"
+            v-model="nameInput"
+            v-on:input="emptyInput"
+            placeholder="Full name *"
+            required
+          />
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="6">
-          <input id="email" autocomplete="off" type="email" name="_replyto" placeholder="Email *" required />
+          <input
+            id="email"
+            autocomplete="off"
+            type="email"
+            name="_replyto"
+            v-model="emailInput"
+            v-on:input="emptyInput"
+            placeholder="Email *"
+            required
+          />
         </v-col>
       </v-row>
-      <v-row class="orange">
+      <v-row>
         <v-col>
-          <textarea name="message" autocomplete="off" placeholder="Message *" required />
+          <textarea
+            name="message"
+            autocomplete="off"
+            v-model="messageInput"
+            v-on:input="emptyInput"
+            placeholder="Message *"
+            required
+          />
         </v-col>
       </v-row>
-      
+      <br />
+      <span>privacy policy checkbox</span>
       <br />
       <br />
       <input type="text" name="_gotcha" style="display:none" />
-
-      <input type="submit" value="Send" />
+      <v-btn :disabled="button_disable" type="submit" id="send_button" class="pa-2 white--text">
+        <input type="submit" value="Send" />
+        <v-icon class="mx-2" size="18">{{send}}</v-icon>
+      </v-btn>
     </form>
   </v-container>
 </template>
 
 <script>
-export default {};
+import { mdiSend } from "@mdi/js";
+export default {
+  data: () => ({
+    send: mdiSend,
+    nameInput: "",
+    emailInput: "",
+    messageInput: "",
+    button_disable: true,
+  }),
+  methods: {
+    emptyInput: function () {
+      if (this.nameInput == "") {
+        this.button_disable = true;
+      } else if (this.emailInput == "") {
+        this.button_disable = true;
+      } else if (!this.emailInput.includes("@")) {
+        this.button_disable = true;
+      } else if (this.messageInput == "") {
+        this.button_disable = true;
+      } else {
+        this.button_disable = false;
+      }
+    },
+  },
+};
 </script>
 
 <style scoped>
-input {
+input[type="text"],
+input[type="email"] {
   padding: 5px;
-  border: 1px solid grey;
+  border: 1px solid #d7d7d7;
   border-radius: 2px;
   width: 100%;
   font-family: Playfair;
+  outline: none;
 }
 textarea {
   padding: 5px;
-  border: 1px solid grey;
+  border: 1px solid #d7d7d7;
   border-radius: 2px;
   resize: none;
   width: 100%;
   height: 120px;
+  font-family: Playfair;
+  outline: none;
+}
+#send_button {
+  background-color: #6f1d32;
   font-family: Playfair;
 }
 </style>

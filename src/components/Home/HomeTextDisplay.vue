@@ -5,8 +5,13 @@
       <v-row justify="center" align="center">
         <v-col class="text-center" cols="12" sm="6" md="6" lg="6">
           <v-card flat id="background-grape" class="white--text pa-4">
-            <span id="home_paragraph_large" v-html="info.home_paragraph"></span>
+            <span id="home_paragraph_large">{{info.home_paragraph}}</span>
           </v-card>
+          <v-row justify="center" align="center">
+            <v-card flat id="background-grape" class="white--text">
+              <span id="home_paragraph_large" v-html="info.one_stop"></span>
+            </v-card>
+          </v-row>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="6">
           <v-row class="pa-3" v-for="points in info.home_bullet_points" :key="points.id">
@@ -25,11 +30,16 @@
 
     <!-- Small text for phone -->
     <v-container v-if="`${this.$vssWidth}` <= 870" id="background-grape" fluid>
-      <v-row>
-        <v-col cols="12" sm="6" md="6" lg="6">
+      <v-row justify="center" align="center">
+        <v-col class="text-center" cols="12" sm="6" md="6" lg="6">
           <v-card flat id="background-grape" class="white--text pa-4">
-            <span id="home_paragraph_small" v-html="info.home_paragraph"></span>
+            <span id="home_paragraph_small">{{info.home_paragraph}}</span>
           </v-card>
+          <v-row justify="center" align="center">
+            <v-card flat id="background-grape" class="white--text">
+              <span id="home_paragraph_small" v-html="info.one_stop"></span>
+            </v-card>
+          </v-row>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="6">
           <v-row class="pa-3" v-for="points in info.home_bullet_points" :key="points.id">

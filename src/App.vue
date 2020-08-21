@@ -35,6 +35,10 @@ export default {
 #text-grape{
   color: #6f1d32;
 }
+#lm_button{
+  background-color: #6f1d32;
+  font-family: Playfair;
+}
 @font-face {
   font-family: "Playfair";
   src: url("/PlayfairDisplay-Regular.ttf");

@@ -19,7 +19,7 @@
             <v-row>
               <v-col class="text-center">
                 <router-link id="link" tag="a" to="/wines">
-                  <v-btn id="button" class="black white--text">
+                  <v-btn id="lm_button" class="white--text">
                     <span>Learn More</span>
                   </v-btn>
                 </router-link>
@@ -54,7 +54,7 @@
             <v-row>
               <v-col class="text-center">
                 <router-link id="link" tag="a" to="/wines">
-                  <v-btn id="button" class="black white--text">
+                  <v-btn id="lm_button" class="black white--text">
                     <span>Learn More</span>
                   </v-btn>
                 </router-link>

@@ -1,5 +1,6 @@
 {
-    "home_paragraph": "(Name of company) specializes in supplying you with the best quality Italian wines with a <b>One-Stop Solution</b>",
+    "home_paragraph": "(Name of company) specializes in supplying you with the best quality Italian wines with a",
+    "one_stop": "<b>One-Stop Solution</b>",
     "home_bullet_points": [
         {
             "id": 1,
