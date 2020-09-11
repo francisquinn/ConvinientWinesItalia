@@ -58,5 +58,10 @@ export default {
   font-size: 40px;
   color: #6f1d32;
 }
+#playfair-semibold-it-error{
+  font-family: Playfair semi-bold it;
+  font-size: 30px;
+  color: #6f1d32;
+}
 
 </style>

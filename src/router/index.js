@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Contact from "../views/Contact";
 import Services from "../views/Services";
 import Wines from "../views/Wines";
+import ErrorPage from "../views/Error";
 
 Vue.use(VueRouter);
 
@@ -27,7 +28,13 @@ const routes = [
     path: "/contact",
     name: "Contact",
     component: Contact,
-  }
+  },
+  {
+    path: "/404",
+    alias: "*",
+    name: "Error",
+    component: ErrorPage,
+  },
 ];
 
 const router = new VueRouter({

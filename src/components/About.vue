@@ -11,15 +11,21 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col cols="12" sm="6" md="6" lg="6" order="first">
+      <v-row align="center" justify="center">
+        <v-col cols="12" sm="6" md="6" lg="7" order="first">
           <v-card flat class="pa-2">
             <span id="playfair-regular">{{info.about}}</span>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="6" md="6" lg="6" order="last">
-          <v-card>
-            <span>(Logo + Name)</span>
+        <v-col cols="12" sm="6" md="6" lg="5" order="last">
+          <v-card flat>
+            <v-img :src="info.about_image" :lazy-src="info.about_image">
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
           </v-card>
         </v-col>
       </v-row>
@@ -36,15 +42,21 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row align="center" justify="center">
         <v-col cols="12" sm="6" md="6" lg="6" order="last">
           <v-card flat class="pa-2">
             <span id="playfair-regular">{{info.about}}</span>
           </v-card>
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="6" order="first">
-          <v-card>
-            <span>(Logo + Name)</span>
+          <v-card flat>
+            <v-img :src="info.about_image" :lazy-src="info.about_image">
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
           </v-card>
         </v-col>
       </v-row>

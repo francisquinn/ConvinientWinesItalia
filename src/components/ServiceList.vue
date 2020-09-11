@@ -10,10 +10,16 @@
       </v-col>
     </v-row>
     <!-- Account manager -->
-    <v-row class="pa-3">
+    <v-row class=" pa-3" align="center" justify="center">
       <v-col class="text-center" cols="12" sm="5" md="4" lg="3">
         <v-card>
-          <v-img id="service_pic" src="/account-manager.jpg" lazy-src="/account-manager.jpg"></v-img>
+          <v-img id="service_pic" src="/account-manager.jpg" lazy-src="/account-manager.jpg">
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
         </v-card>
       </v-col>
       <v-col cols="12" sm="7" md="8" lg="8">
@@ -27,12 +33,18 @@
         </v-row>
       </v-col>
     </v-row>
-
+    <v-divider></v-divider>
     <!-- Wine services -->
-    <v-row class="pa-3">
+    <v-row class=" pa-3" align="center" justify="center">
       <v-col class="text-center" cols="12" sm="5" md="4" lg="3">
         <v-card>
-          <v-img id="service_pic" src="/bottles-blured.jpg" lazy-src="/bottles-blured.jpg"></v-img>
+          <v-img id="service_pic" src="/bottles-blured.jpg" lazy-src="/bottles-blured.jpg">
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
         </v-card>
       </v-col>
       <v-col cols="12" sm="7" md="8" lg="8">
@@ -46,12 +58,18 @@
         </v-row>
       </v-col>
     </v-row>
-
-    <!-- Language services -->
-    <v-row class="pa-3">
+    <v-divider></v-divider>
+    <!-- Packing services -->
+    <v-row class="pa-3" align="center" justify="center">
       <v-col class="text-center" cols="12" sm="5" md="4" lg="3">
         <v-card>
-          <v-img id="service_pic" src="/uk-flag.jpg" lazy-src="/uk-flag.jpg"></v-img>
+          <v-img id="service_pic" src="/wine-glasses.jpg" lazy-src="/wine-glasses.jpg">
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
         </v-card>
       </v-col>
       <v-col cols="12" sm="7" md="8" lg="8">

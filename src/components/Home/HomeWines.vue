@@ -29,7 +29,13 @@
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="5" order="last">
           <v-card>
-            <v-img :src="info.home_wine_picture" :lazy-src="info.home_wine_picture"></v-img>
+            <v-img :src="info.home_wine_picture" :lazy-src="info.home_wine_picture">
+              <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-row>
+            </template>
+            </v-img>
           </v-card>
         </v-col>
       </v-row>
@@ -54,7 +60,7 @@
             <v-row>
               <v-col class="text-center">
                 <router-link id="link" tag="a" to="/wines">
-                  <v-btn id="lm_button" class="black white--text">
+                  <v-btn id="lm_button" class="white--text">
                     <span>Learn More</span>
                   </v-btn>
                 </router-link>
@@ -64,7 +70,13 @@
         </v-col>
         <v-col cols="12" sm="6" md="6" lg="6" order="first">
           <v-card>
-            <v-img :src="info.home_wine_picture" :lazy-src="info.home_wine_picture"></v-img>
+            <v-img :src="info.home_wine_picture" :lazy-src="info.home_wine_picture">
+              <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-row>
+            </template>
+            </v-img>
           </v-card>
         </v-col>
       </v-row>

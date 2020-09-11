@@ -1,5 +1,5 @@
 {
-    "home_paragraph": "(Name of company) specializes in supplying you with the best quality Italian wines with a",
+    "home_paragraph": "Convinient Wines Italia specializes in supplying you with the best value for money Italian wines with a",
     "one_stop": "<b>One-Stop Solution</b>",
     "home_bullet_points": [
         {
@@ -16,18 +16,19 @@
         },
         {
             "id": 4,
-            "point": "<b>One</b> comprehensive wine catalogue"
+            "point": "<b>One</b> comprehensive wine listing with over 100 varietals avaliable"
         }
     ],
-    "home_service_text": "Some text about the service page",
+    "home_service_text": "Convinient Wines Italia offers you a complete range of services and wine purchasing options covering all segmants of the wine market. Our experts will work to your brief and present to you all the best buying options avaliable, saving you time and money.",
     "home_service_picture": "/service-home.jpg",
     "home_wine_text": "some text about the wine page",
-    "home_wine_picture": "/wine-bottle-blur.jpg", 
-    "about": "(company name) was founded in 2005. Trades worldwide supplying all distribution channels from supermarkets to HO. RE. CA chain.",
+    "home_wine_picture": "/wine-bottle-blur.jpg",
+    "about": "Convinient Wines Italia trades",
+    "about_image" : "/small-logo-text-color.png",
     "services": [
         {
             "id": 1,
-            "account_services":[
+            "account_services": [
                 {
                     "id": 1,
                     "service": "Your personal account manager"
@@ -48,10 +49,22 @@
         },
         {
             "id": 2,
-            "language_services":[
+            "language_services": [
                 {
                     "id": 1,
-                    "service":  "Fluent English speaking"
+                    "service": "Supply of Key Keg barrels"
+                },
+                {
+                    "id": 2,
+                    "service": "Supply of Bag-in-Box 3L and 5L"
+                },
+                {
+                    "id": 3,
+                    "service": "Production of your own private label"
+                },
+                {
+                    "id": 4,
+                    "service": "Fluent English speaking staff"
                 }
             ],
             "picture": "/uk.png"
@@ -61,17 +74,22 @@
             "wine_services": [
                 {
                     "id": 1,
-                    "service": "Large Italian wine portfolio"
+                    "service": "Large Italian wine portfolio covering all the main regions"
                 },
                 {
                     "id": 2,
-                    "service": "Wines from Entry level to Internation prize winners"
+                    "service": "Wines from Entry level to International prize winners"
+                },
+                {
+                    "id": 3,
+                    "service": "Flexible ordering including mixed pallet selections"
+                },
+                {
+                    "id": 4,
+                    "service": "No MOQ's"
                 }
             ]
         },
-        
-        
-        
         {
             "id": 8,
             "service": "Flexable order quantities"

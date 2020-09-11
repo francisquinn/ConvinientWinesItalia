@@ -18,7 +18,7 @@
             id="name"
             autocomplete="off"
             type="text"
-            name="name"
+            name="fullname"
             v-model="nameInput"
             v-on:input="emptyInput"
             placeholder="Full name *"
@@ -35,6 +35,27 @@
             v-on:input="emptyInput"
             placeholder="Email *"
             required
+          />
+        </v-col>
+      </v-row>
+      
+      <v-row>
+        <v-col>
+          <select name="enquirer" v-model="selectedText"  id="enquirer" required>
+            <option value="" disabled selected>Enquirer profile *</option>
+            <option v-for="enq in enquirer" :key="enq.value" :value="enq.value">{{enq.text}}</option>
+          </select>
+        </v-col>
+      </v-row>
+     
+      <v-row v-show="this.selectedText == 'Other'">
+        <v-col>
+          <input
+            id="other"
+            autocomplete="off"
+            type="text"
+            name="enquirer"
+            placeholder="Please specify"
           />
         </v-col>
       </v-row>
@@ -72,6 +93,15 @@ export default {
     emailInput: "",
     messageInput: "",
     button_disable: true,
+    enquirer: [
+      { value: "Private individual", text: "Private individual" },
+      { value: "Wine Importer", text: "Wine Importer" },
+      { value: "Restaurant", text: "Restaurant" },
+      { value: "Supermarket", text: "Supermarket" },
+      { value: "Cash & Carry", text: "Cash & Carry" },
+      { value: "Other", text: "Other" },
+    ],
+    selectedText: "",
   }),
   methods: {
     emptyInput: function () {
@@ -100,6 +130,27 @@ input[type="email"] {
   width: 100%;
   font-family: Playfair;
   outline: none;
+}
+select {
+  padding: 5px;
+  border: 1px solid #d7d7d7;
+  border-radius: 2px;
+  width: 100%;
+  font-family: Playfair;
+  outline: none;
+  color: grey;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  padding: 5px;
+  border: 1px solid #d7d7d7;
+  border-radius: 2px;
+  width: 100%;
+  font-family: Playfair;
+  outline: none;
+  color: grey;
 }
 textarea {
   padding: 5px;
