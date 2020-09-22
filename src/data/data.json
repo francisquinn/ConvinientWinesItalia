@@ -24,7 +24,7 @@
     "home_wine_text": "some text about the wine page",
     "home_wine_picture": "/wine-bottle-blur.jpg",
     "about": "Convinient Wines Italia trades",
-    "about_image" : "/small-logo-text-color.png",
+    "about_image": "/small-logo-text-color.png",
     "services": [
         {
             "id": 1,
@@ -91,20 +91,482 @@
             ]
         },
         {
-            "id": 8,
+            "id": 4,
             "service": "Flexable order quantities"
         },
         {
-            "id": 9,
+            "id": 5,
             "service": "Excellent price/quality delivery"
         },
         {
-            "id": 10,
+            "id": 6,
             "service": "Complete supply chain projects"
         },
         {
-            "id": 11,
+            "id": 7,
             "service": "Your private label project"
+        }
+    ],
+    "wine_list": [
+        {
+            "id": 1,
+            "region": "Abruzzo",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Pecorino IGT"
+                },
+                {
+                    "id": 2,
+                    "name": "Rosso Piceno IGT"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "region": "Basilicata",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Bianco IGT Malvasia Basilicata"
+                },
+                {
+                    "id": 2,
+                    "name": "Rosato IGT Aglianico Basilicata"
+                },
+                {
+                    "id": 3,
+                    "name": "Rosso DOC Aglianico del Vulture"
+                },
+                {
+                    "id": 4,
+                    "name": "Bianco Moscato Basilicato IGT"
+                },
+                {
+                    "id": 5,
+                    "name": "Rosato Aglianico Basilicato IGT"
+                },
+                {
+                    "id": 6,
+                    "name": "Rosso Aglianico del Vulture IGT"
+                },
+                {
+                    "id": 7,
+                    "name": "Bianco IGT Basilicata"
+                },
+                {
+                    "id": 8,
+                    "name": "Rosso IGT Basilicata"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "region": "Campania",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Fiano IGT"
+                },
+                {
+                    "id": 2,
+                    "name": "Falanghina IGT"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "region": "Emilia Romagna",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Various Lambrusco’s available"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "region": "Friuli Venezia Giulia",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Chardonnay DOC Friuli"
+                },
+                {
+                    "id": 2,
+                    "name": "Sauvignon DOC Friuli"
+                },
+                {
+                    "id": 3,
+                    "name": "Pinot Grigio DOC Friuli"
+                },
+                {
+                    "id": 4,
+                    "name": "Friulano DOC Friuli"
+                },
+                {
+                    "id": 5,
+                    "name": "Traminer Aromatico DOC Friuli"
+                },
+                {
+                    "id": 6,
+                    "name": "Cabernet Franc IGT Trevenezie"
+                },
+                {
+                    "id": 7,
+                    "name": "Merlot IGT Venezia Giulia"
+                },
+                {
+                    "id": 8,
+                    "name": "Refosco dal Peduncolo Rosso IGT Venezia Giulia"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "region": "Lazio",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Frascati DOCG Superiore BIO"
+                },
+                {
+                    "id": 2,
+                    "name": "Malvasia IGT Lazio Bianco"
+                },
+                {
+                    "id": 3,
+                    "name": "Cesanese IGT Lazio Rosso"
+                },
+                {
+                    "id": 4,
+                    "name": "Frascati DOC"
+                },
+                {
+                    "id": 5,
+                    "name": "Roma DOC Bianco"
+                },
+                {
+                    "id": 6,
+                    "name": "Roma DOC Rosso"
+                },
+                {
+                    "id": 7,
+                    "name": "Castelli Romani DOC Bianco"
+                },
+                {
+                    "id": 8,
+                    "name": "Castelli Romani DOC Rosso"
+                },
+                {
+                    "id": 9,
+                    "name": "Bianco Amabile"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "region": "Piemonte",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Bonarda dell'Oltrepo' Pavese DOC"
+                },
+                {
+                    "id": 2,
+                    "name": "Brachetto dell'Acqui DOCG"
+                },
+                {
+                    "id": 3,
+                    "name": "Piemonte DOC Barbera Frizzante"
+                },
+                {
+                    "id": 4,
+                    "name": "Piemonte DOC Bianco Frizzante"
+                },
+                {
+                    "id": 5,
+                    "name": "Moscato D'Asti DOCG"
+                },
+                {
+                    "id": 6,
+                    "name": "Piemonte DOC Cortese Frizzante"
+                },
+                {
+                    "id": 7,
+                    "name": "Piemonte Cortese DOC"
+                },
+                {
+                    "id": 8,
+                    "name": "Langhe Arneis DOC"
+                },
+                {
+                    "id": 9,
+                    "name": "Nebbiolo D'Alba Marne Forti DOC"
+                },
+                {
+                    "id": 10,
+                    "name": "Barbaresco Magne Forti DOCG"
+                },
+                {
+                    "id": 11,
+                    "name": "Barolo Magne Forti DOCG"
+                },
+                {
+                    "id": 12,
+                    "name": "Moscato Ice Demi Sec VSQA"
+                },
+                {
+                    "id": 13,
+                    "name": "Asti Secco DOCG"
+                },
+                {
+                    "id": 14,
+                    "name": "Asti DOCG - VSPQRD - Dolce"
+                },
+                {
+                    "id": 15,
+                    "name": "Brachetto D´Acqui DOCG Dolce"
+                },
+                {
+                    "id": 16,
+                    "name": "Gran Dessert Dolce Spumante VS"
+                },
+                {
+                    "id": 17,
+                    "name": "Fragolino Rosso Spumante"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "region": "Puglia",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Primitivo IGT"
+                },
+                {
+                    "id": 2,
+                    "name": "Primitivo di Manduria DOC"
+                },
+                {
+                    "id": 3,
+                    "name": "Negroamaro IGT"
+                },
+                {
+                    "id": 4,
+                    "name": "Nero di Troia DOC and DOCG"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "region": "Sicilia",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Grillo DOC Sicilia"
+                },
+                {
+                    "id": 2,
+                    "name": "Inzolia IGT Sicilia"
+                },
+                {
+                    "id": 3,
+                    "name": "Etna Bianco DOC Sicilia"
+                },
+                {
+                    "id": 4,
+                    "name": "Nero D'Avola DOC Sicilia"
+                },
+                {
+                    "id": 5,
+                    "name": "Syrah IGT Sicilia"
+                },
+                {
+                    "id": 6,
+                    "name": "Etna Rosso DOC Sicilia"
+                },
+                {
+                    "id": 7,
+                    "name": "Cuvee Spumante DOC Sicilia"
+                },
+                {
+                    "id": 8,
+                    "name": "Nero D'Avola Syrah IGT Terre Siciliane"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "region": "Toscana",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Chianti Classico DOCG Fiasco 0,5 l"
+                },
+                {
+                    "id": 2,
+                    "name": "Chianti Classico DOCG Fiasco 1,0 l"
+                },
+                {
+                    "id": 3,
+                    "name": "Bianco Toscana IGT"
+                },
+                {
+                    "id": 4,
+                    "name": "Rosso Toscana IGT"
+                },
+                {
+                    "id": 5,
+                    "name": "Vernaccia di San Gimignano DOCG"
+                },
+                {
+                    "id": 6,
+                    "name": "Morellino di Scansano DOCG"
+                },
+                {
+                    "id": 7,
+                    "name": "Vermentino Toscana IGT"
+                },
+                {
+                    "id": 8,
+                    "name": "Sangiovese IGT"
+                },
+                {
+                    "id": 9,
+                    "name": "Orcia DOC Bianco"
+                },
+                {
+                    "id": 10,
+                    "name": "Orcia DOC Rosso"
+                },
+                {
+                    "id": 11,
+                    "name": "Syrah IGT"
+                },
+                {
+                    "id": 12,
+                    "name": "Rosato Toscana IGT"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "region": "Veneto",
+            "wines": [
+                {
+                    "id": 1,
+                    "name": "Valdobbiadene Prosecco Superiore DOCG Extra Dry and Brut"
+                },
+                {
+                    "id": 2,
+                    "name": "Prosecco Spumante Millesimato DOC Extra Dry"
+                },
+                {
+                    "id": 3,
+                    "name": "Prosecco Spumante DOC Extry Dry or Brut – BIO Vegan and non BIO"
+                },
+                {
+                    "id": 4,
+                    "name": "Prosecco Frizzante DOC (also with tappo spago or with screw cap)"
+                },
+                {
+                    "id": 5,
+                    "name": "Prosecco Spumante Rosato Millesimato DOC"
+                },
+                {
+                    "id": 6,
+                    "name": "Soave DOC"
+                },
+                {
+                    "id": 7,
+                    "name": "Custoza DOC"
+                },
+                {
+                    "id": 8,
+                    "name": "Chiaretto DOC"
+                },
+                {
+                    "id": 9,
+                    "name": "Bardolino DOC"
+                },
+                {
+                    "id": 10,
+                    "name": "Valpolicella DOC"
+                },
+                {
+                    "id": 11,
+                    "name": "Valpolicella Ripasso Superiore DOC"
+                },
+                {
+                    "id": 12,
+                    "name": "Amarone della Valpolicella DOCG"
+                },
+                {
+                    "id": 13,
+                    "name": "Cabernet IGT"
+                },
+                {
+                    "id": 14,
+                    "name": "Merlot IGT"
+                },
+                {
+                    "id": 15,
+                    "name": "Pinot Grigio DOC"
+                },
+                {
+                    "id": 16,
+                    "name": "Chardonnay IGT and DOC"
+                },
+                {
+                    "id": 17,
+                    "name": "Vino Bianco"
+                },
+                {
+                    "id": 18,
+                    "name": "Vino Rosso"
+                }
+            ]
+        }
+    ],
+    "other_products": [
+        {
+            "id": 1,
+            "name": "Aperitivo Bianco"
+        },
+        {
+            "id": 2,
+            "name": "Aperitivo Rosso"
+        },
+        {
+            "id": 3,
+            "name": "Vermouth Bianco"
+        },
+        {
+            "id": 4,
+            "name": "Vermouth Rosso"
+        },
+        {
+            "id": 5,
+            "name": "Marsala Fine IP"
+        },
+        {
+            "id": 6,
+            "name": "Vermouth di Torino Bianco"
+        },
+        {
+            "id": 7,
+            "name": "Vermouth di Torino Rosso"
+        },
+        {
+            "id": 8,
+            "name": "Vermouth di Torino Superiore Bianco"
+        },
+        {
+            "id": 9,
+            "name": "Vermouth di Torino Superiore Rosso"
         }
     ]
 }
