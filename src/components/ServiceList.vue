@@ -10,7 +10,7 @@
       </v-col>
     </v-row>
     <!-- Account manager -->
-    <v-row class=" pa-3" align="center" justify="center">
+    <v-row data-aos="fade-up" class=" pa-3" align="center" justify="center">
       <v-col class="text-center" cols="12" sm="5" md="4" lg="3">
         <v-card>
           <v-img id="service_pic" src="/account-manager.jpg" lazy-src="/account-manager.jpg">
@@ -28,14 +28,14 @@
             <v-icon id="text-grape">{{arrow}}</v-icon>
           </v-col>
           <v-col cols="10" sm="10" md="9" lg="9">
-            <span id="playfair-regular">{{serv.service}}</span>
+            <span id="playfair-md-text">{{serv.service}}</span>
           </v-col>
         </v-row>
       </v-col>
     </v-row>
     <v-divider></v-divider>
     <!-- Wine services -->
-    <v-row class=" pa-3" align="center" justify="center">
+    <v-row data-aos="fade-up" class=" pa-3" align="center" justify="center">
       <v-col class="text-center" cols="12" sm="5" md="4" lg="3">
         <v-card>
           <v-img id="service_pic" src="/bottles-blured.jpg" lazy-src="/bottles-blured.jpg">
@@ -53,14 +53,14 @@
             <v-icon id="text-grape">{{arrow}}</v-icon>
           </v-col>
           <v-col cols="10" sm="11" md="9" lg="9">
-            <span id="playfair-regular">{{serv.service}}</span>
+            <span id="playfair-md-text">{{serv.service}}</span>
           </v-col>
         </v-row>
       </v-col>
     </v-row>
     <v-divider></v-divider>
     <!-- Packing services -->
-    <v-row class="pa-3" align="center" justify="center">
+    <v-row data-aos="fade-up" class="pa-3" align="center" justify="center">
       <v-col class="text-center" cols="12" sm="5" md="4" lg="3">
         <v-card>
           <v-img id="service_pic" src="/wine-glasses.jpg" lazy-src="/wine-glasses.jpg">
@@ -78,7 +78,7 @@
             <v-icon id="text-grape">{{arrow}}</v-icon>
           </v-col>
           <v-col cols="10" sm="11" md="9" lg="9">
-            <span id="playfair-regular">{{serv.service}}</span>
+            <span id="playfair-md-text">{{serv.service}}</span>
           </v-col>
         </v-row>
       </v-col>

@@ -12,7 +12,7 @@
         </v-col>
       </v-row>
       <v-row align="center" justify="center">
-        <v-col cols="12" sm="6" md="6" lg="7" order="first">
+        <v-col data-aos="fade-right" cols="12" sm="6" md="6" lg="7" order="first">
           <v-card flat class="pa-2">
             <span id="playfair-regular">{{info.home_service_text}}</span>
             <br />
@@ -28,7 +28,7 @@
             </v-row>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="6" md="6" lg="5" order="last">
+        <v-col data-aos="fade-left" cols="12" sm="6" md="6" lg="5" order="last">
           <v-card>
             <v-img :src="info.home_service_picture" :lazy-src="info.home_service_picture">
               <template v-slot:placeholder>

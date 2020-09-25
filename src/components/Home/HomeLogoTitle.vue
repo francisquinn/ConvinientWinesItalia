@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Large screen center -->
-    <v-container fluid>
+    <v-container data-aos="fade-down"  fluid>
       <v-row
         id="logo_picture_large"
         class="white"
@@ -23,7 +23,8 @@
       </v-row>
     </v-container>
 
-    <v-container  >
+<!-- small screen center -->
+    <v-container data-aos="fade-down" fluid >
       <v-row
         id="logo_picture_small"
         class="white"

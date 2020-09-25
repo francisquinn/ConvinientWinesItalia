@@ -1,22 +1,22 @@
 {
     "home_paragraph": "Convinient Wines Italia specializes in supplying you with the best value for money Italian wines with a",
-    "one_stop": "<b>One-Stop Solution</b>",
+    "one_stop": "<u><b>One-Stop Solution</b></u>",
     "home_bullet_points": [
         {
             "id": 1,
-            "point": "<b>One</b> order collection point"
+            "point": "<b id='text-grape'>One</b> order collection point"
         },
         {
             "id": 2,
-            "point": "<b>One</b> invoice/administration"
+            "point": "<b id='text-grape'>One</b> invoice/administration"
         },
         {
             "id": 3,
-            "point": "<b>One</b> contact person for everything"
+            "point": "<b id='text-grape'>One</b> contact person for everything"
         },
         {
             "id": 4,
-            "point": "<b>One</b> comprehensive wine listing with over 100 varietals avaliable"
+            "point": "<b id='text-grape'>One</b> comprehensive wine list"
         }
     ],
     "home_service_text": "Convinient Wines Italia offers you a complete range of services and wine purchasing options covering all segmants of the wine market. Our experts will work to your brief and present to you all the best buying options avaliable, saving you time and money.",
@@ -119,6 +119,18 @@
                 {
                     "id": 2,
                     "name": "Rosso Piceno IGT"
+                },
+                {
+                    "id": 3,
+                    "name": "Montepulciano d'Abruzzo"
+                },
+                {
+                    "id": 4,
+                    "name": "Passerina"
+                },
+                {
+                    "id": 5,
+                    "name": "Cerasuolo"
                 }
             ]
         },
@@ -157,6 +169,10 @@
                 {
                     "id": 8,
                     "name": "Rosso IGT Basilicata"
+                },
+                {
+                    "id": 9,
+                    "name": "Bombino Nero"
                 }
             ]
         },
@@ -567,6 +583,63 @@
         {
             "id": 9,
             "name": "Vermouth di Torino Superiore Rosso"
+        }
+    ],
+    "special_offers":[
+        {
+            "id": 1,
+            "product": "Prosecco Frizzante",
+            "price": "€2,20"
+        },
+        {
+            "id": 2,
+            "product": "Prosecco Spumante",
+            "price": "€2,80"
+        },
+        {
+            "id": 3,
+            "product": "Barolo",
+            "price": "€16,00"
+        },
+        {
+            "id": 4,
+            "product": "Pinot Grigio",
+            "price": "€1,40"
+        },
+        {
+            "id": 5,
+            "product": "Chianti",
+            "price": "€2,60"
+        },
+        {
+            "id": 6,
+            "product": "Sangiovese Toscana",
+            "price": "€2,50"
+        },
+        {
+            "id": 7,
+            "product": "Brunello",
+            "price": "€16,00"
+        },
+        {
+            "id": 8,
+            "product": "Primitivo",
+            "price": "€2,20"
+        },
+        {
+            "id": 9,
+            "product": "Spumante",
+            "price": "€1,60"
+        },
+        {
+            "id": 10,
+            "product": "Entry level wines",
+            "price": "€1,25"
+        },
+        {
+            "id": 11,
+            "product": "Key Kegs",
+            "price": "€1,50 per liter"
         }
     ]
 }

@@ -12,6 +12,7 @@
 
     <!-- Formspree contact form -->
     <form action="https://formspree.io/mdowjzol" method="POST">
+    <!-- Full name and email -->
       <v-row>
         <v-col cols="12" sm="6" md="6" lg="6">
           <input
@@ -38,7 +39,34 @@
           />
         </v-col>
       </v-row>
-      
+      <!-- Phone and company name -->
+      <v-row>
+        <v-col cols="12" sm="6" md="6" lg="6">
+          <input
+            id="phone"
+            autocomplete="off"
+            type="text"
+            name="phone"
+            v-model="phoneInput"
+            v-on:input="emptyInput"
+            placeholder="Phone number *"
+            required
+          />
+        </v-col>
+        <v-col cols="12" sm="6" md="6" lg="6">
+          <input
+            id="company"
+            autocomplete="off"
+            type="text"
+            name="company"
+            v-model="companyInput"
+            v-on:input="emptyInput"
+            placeholder="Company name *"
+            required
+          />
+        </v-col>
+      </v-row>
+      <!-- Enquirer -->
       <v-row>
         <v-col>
           <select name="enquirer" v-model="selectedText"  id="enquirer" required>
@@ -47,7 +75,7 @@
           </select>
         </v-col>
       </v-row>
-     
+     <!-- Other, optional -->
       <v-row v-show="this.selectedText == 'Other'">
         <v-col>
           <input
@@ -59,6 +87,7 @@
           />
         </v-col>
       </v-row>
+      <!-- Message -->
       <v-row>
         <v-col>
           <textarea
@@ -72,9 +101,11 @@
         </v-col>
       </v-row>
       <br />
+      <!-- Privacy policy -->
       <span>privacy policy checkbox</span>
       <br />
       <br />
+      <!-- Send button -->
       <input type="text" name="_gotcha" style="display:none" />
       <v-btn :disabled="button_disable" type="submit" id="send_button" class="pa-2 white--text">
         <input type="submit" value="Send" />

@@ -1,23 +1,47 @@
 <template>
-  <v-container>
-      <v-row class="blue">
-          <v-col cols="12" sm="6" md="4" lg="4" v-for="product in products.other_products" :key="product.id">
-              <span>{{product.name}}</span>
-          </v-col>
-      </v-row>
+  <v-container class="otherproducts_anchor">
+    <v-row class="pa-2">
+      <v-col>
+        <span id="playfair-regular-grape"><u>Other Products</u></span>
+      </v-col>
+    </v-row>
+    <v-row >
+      <v-col
+        cols="12"
+        sm="6"
+        md="4"
+        lg="4"
+        v-for="product in products.other_products"
+        :key="product.id"
+      >
+        <v-card flat class="pa-2">
+          <v-icon class="mx-1" id="text-grape" size="20">{{ arrow }}</v-icon>
+          <span id="playfair-md-text">{{ product.name }} </span>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
+import { mdiChevronRight } from "@mdi/js";
 export default {
-props: {
+  props: {
     products: {
       type: Object,
     },
   },
-}
+  data: () => ({
+    arrow: mdiChevronRight,
+  }),
+};
 </script>
 
-<style>
+<style scoped>
+.otherproducts_anchor {
+  position: relative;
+  top: 70px;
+  margin-top: -70px;
+}
 
 </style>
