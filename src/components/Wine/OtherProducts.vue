@@ -5,7 +5,7 @@
         <span id="playfair-regular-grape"><u>Other Products</u></span>
       </v-col>
     </v-row>
-    <v-row >
+    <v-row data-aos="fade-right" >
       <v-col
         cols="12"
         sm="6"
@@ -13,6 +13,7 @@
         lg="4"
         v-for="product in products.other_products"
         :key="product.id"
+        
       >
         <v-card flat class="pa-2">
           <v-icon class="mx-1" id="text-grape" size="20">{{ arrow }}</v-icon>

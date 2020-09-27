@@ -11,8 +11,13 @@
     </v-row>
 
     <!-- Formspree contact form -->
-    <form action="https://formspree.io/mdowjzol" method="POST">
-    <!-- Full name and email -->
+    <form
+      data-aos="fade-up"
+      class="pa-2"
+      action="https://formspree.io/mdowjzol"
+      method="POST"
+    >
+      <!-- Full name and email -->
       <v-row>
         <v-col cols="12" sm="6" md="6" lg="6">
           <input
@@ -45,7 +50,7 @@
           <input
             id="phone"
             autocomplete="off"
-            type="text"
+            type="number"
             name="phone"
             v-model="phoneInput"
             v-on:input="emptyInput"
@@ -69,13 +74,15 @@
       <!-- Enquirer -->
       <v-row>
         <v-col>
-          <select name="enquirer" v-model="selectedText"  id="enquirer" required>
+          <select name="enquirer" v-model="selectedText" id="enquirer" required>
             <option value="" disabled selected>Enquirer profile *</option>
-            <option v-for="enq in enquirer" :key="enq.value" :value="enq.value">{{enq.text}}</option>
+            <option v-for="enq in enquirer" :key="enq.value" :value="enq.value">
+              {{ enq.text }}
+            </option>
           </select>
         </v-col>
       </v-row>
-     <!-- Other, optional -->
+      <!-- Other, optional -->
       <v-row v-show="this.selectedText == 'Other'">
         <v-col>
           <input
@@ -102,14 +109,30 @@
       </v-row>
       <br />
       <!-- Privacy policy -->
-      <span>privacy policy checkbox</span>
+      <input type="checkbox" id="policy" name="privacy_policy" required />
+      <label id="playfair-regular" for="vehicle1">
+        I've read and accept the
+        <a
+          id="text-grape"
+          href="https://www.iubenda.com/privacy-policy/71430357/full-legal"
+          target="_blank"
+          >Privacy Policy</a
+        >
+        *</label
+      >
+      <br />
       <br />
       <br />
       <!-- Send button -->
-      <input type="text" name="_gotcha" style="display:none" />
-      <v-btn :disabled="button_disable" type="submit" id="send_button" class="pa-2 white--text">
+      <input type="text" name="_gotcha" style="display: none" />
+      <v-btn
+        :disabled="button_disable"
+        type="submit"
+        id="send_button"
+        class="pa-2 white--text"
+      >
         <input type="submit" value="Send" />
-        <v-icon class="mx-2" size="18">{{send}}</v-icon>
+        <v-icon class="mx-2" size="18">{{ send }}</v-icon>
       </v-btn>
     </form>
   </v-container>
@@ -122,6 +145,8 @@ export default {
     send: mdiSend,
     nameInput: "",
     emailInput: "",
+    phoneInput: "",
+    companyInput: "",
     messageInput: "",
     button_disable: true,
     enquirer: [
@@ -154,13 +179,28 @@ export default {
 
 <style scoped>
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="number"] {
   padding: 5px;
   border: 1px solid #d7d7d7;
   border-radius: 2px;
   width: 100%;
   font-family: Playfair;
   outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+#policy {
+  border: 1px solid #d7d7d7;
+  cursor: pointer;
+  color: red;
 }
 select {
   padding: 5px;

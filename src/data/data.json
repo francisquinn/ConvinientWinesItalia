@@ -19,11 +19,11 @@
             "point": "<b id='text-grape'>One</b> comprehensive wine list"
         }
     ],
-    "home_service_text": "Convinient Wines Italia offers you a complete range of services and wine purchasing options covering all segmants of the wine market. Our experts will work to your brief and present to you all the best buying options avaliable, saving you time and money.",
+    "home_service_text": "Convinient Wines Italia offers you a complete range of services and wine purchasing options covering all segments of the wine market. Our experts will work to your brief and present to you all the best buying options avaliable, saving you time and money.",
     "home_service_picture": "/service-home.jpg",
-    "home_wine_text": "some text about the wine page",
+    "home_wine_text": "Convinient Wines Italia ",
     "home_wine_picture": "/wine-bottle-blur.jpg",
-    "about": "Convinient Wines Italia trades",
+    "about": "<p>Convinient Wines Italia, founded by Gerard Leonelli, is a sales agency trading internationally since 2008. The company mission is to provide each customer constantly with the best deals and the best service available in the Italian wine market via a one-stop supply chain solution.</p><p>With solid contacts with over 20 Italian wineries of various dimensions, Convenient Wines Italia delivers to you a fantastic selection of wines at very affordable prices.</p><p>We save your valuable time searching for quality wines and we save you money on transport cost by providing a single order collection point. We supply all types of business customers including restaurants, wine importers, Cash & Carry and supermarkets chains.</p><p>Whatever your requirements are, Convinient Wines Italia will be able to assist you in finding the best solution to your briefing.</p>",
     "about_image": "/small-logo-text-color.png",
     "services": [
         {
@@ -187,16 +187,6 @@
                 {
                     "id": 2,
                     "name": "Falanghina IGT"
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "region": "Emilia Romagna",
-            "wines": [
-                {
-                    "id": 1,
-                    "name": "Various Lambrusco’s available"
                 }
             ]
         },

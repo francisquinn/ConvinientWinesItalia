@@ -11,10 +11,10 @@
     >
       <router-link id="logo-link" to="/">
         <v-img
-          max-height="50"
-          max-width="50"
-          src="/logo.png"
-          lazy-src="/logo.png"
+          max-height="200"
+          max-width="200"
+          src="/small-logo-text-color.png"
+          lazy-src="/small-logo-text-color.png"
         >
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
@@ -38,12 +38,7 @@
           <span id="nav_link">Services</span>
         </router-link>
         <router-link class id="link" to="/wines">
-          <v-menu
-            open-on-hover
-            close-on-click
-            close-on-content-click
-            offset-y
-          >
+          <v-menu open-on-hover close-on-click close-on-content-click offset-y>
             <template v-slot:activator="{ on, attrs }">
               <span id="nav_link" v-bind="attrs" v-on="on">Wines</span>
             </template>
@@ -121,20 +116,70 @@
         </div>
       </v-list-item-title>
       <v-divider></v-divider>
-      <v-list>
-        <v-list-item
-          v-for="page in pages"
-          :key="page.text"
-          router
-          :to="page.route"
-        >
+      <!-- Start of Nav List -->
+      <v-list dark>
+        <!-- Home -->
+        <v-list-item router to="/">
           <v-list-item-icon>
-            <v-icon class="white--text">{{ page.icon }}</v-icon>
+            <v-icon class="white--text">{{ mdiHome }}</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title id="playfair-regular" class="white--text">{{
-              page.text
-            }}</v-list-item-title>
+            <v-list-item-title id="playfair-regular" class="white--text"
+              >Home</v-list-item-title
+            >
+          </v-list-item-content>
+        </v-list-item>
+        <!-- About -->
+        <v-list-item router to="/#about">
+          <v-list-item-icon>
+            <v-icon class="white--text">{{ mdiInformationVariant }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title id="playfair-regular" class="white--text"
+              >About</v-list-item-title
+            >
+          </v-list-item-content>
+          <!-- Services -->
+        </v-list-item>
+        <v-list-item router to="/services">
+          <v-list-item-icon>
+            <v-icon class="white--text">{{ mdiFileDocumentEdit }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title id="playfair-regular" class="white--text"
+              >Services</v-list-item-title
+            >
+          </v-list-item-content>
+        </v-list-item>
+        <!-- Wines -->
+        <v-list-group  class="this.$vuetify.theme.dark" no-action>
+          <template v-slot:activator>
+            <v-list-item-icon>
+              <v-icon class="white--text">{{ mdiGlassWine }}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title id="playfair-regular" class="white--text"
+                >Wines</v-list-item-title
+              >
+            </v-list-item-content>
+          </template>
+          <v-list-item class="white--text" router to="/wines/#region">
+            <v-list-item-content>
+              <v-list-item-title id="playfair-regular" class="white--text"
+                >By region</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-group>
+        <!-- Contact -->
+        <v-list-item router to="/contact">
+          <v-list-item-icon>
+            <v-icon class="white--text">{{ mdiEmail }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title id="playfair-regular" class="white--text"
+              >Contact</v-list-item-title
+            >
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -161,17 +206,15 @@ import { mdiEmail } from "@mdi/js";
 export default {
   data: () => ({
     drawer: false,
-    pages: [
-      { icon: mdiHome, text: "Home", route: "/" },
-      { icon: mdiInformationVariant, text: "About", route: "/#about" },
-      { icon: mdiFileDocumentEdit, text: "Services", route: "/services" },
-      { icon: mdiGlassWine, text: "Wines", route: "" },
-      { icon: mdiEmail, text: "Contact", route: "/contact" },
-    ],
+    mdiHome,
+    mdiInformationVariant,
+    mdiFileDocumentEdit,
+    mdiGlassWine,
+    mdiEmail,
     wine_links: [
-      { id: 1, text: "Special Offers", route: "/wines/#specialoffers" },
+      { id: 1, text: "Special Offers", route: "/wines/specialoffers" },
       { id: 2, text: "By Region", route: "/wines/#region" },
-      { id: 3, text: "Other Products", route: "/wines/#otherproducts" }
+      { id: 3, text: "Other Products", route: "/wines/#otherproducts" },
     ],
   }),
   mixins: [VueScreenSize.VueScreenSizeMixin],
@@ -179,13 +222,16 @@ export default {
 </script>
 
 <style scoped>
+.v-list-group--active{
+  color: red;
+}
 #link {
   color: white;
   padding: 5px;
 }
 #logo-link {
   color: white;
-  border: 2px solid white;
+  border: none;
 }
 a {
   text-decoration: none;

@@ -1,28 +1,33 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row data-aos="fade-up" id="playfair-regular">
       <v-col cols="12" sm="6" md="6" lg="6">
         <v-card flat>
           <div class="pa-2">
-            <v-icon id="text-grape">{{email}}</v-icon>
-            <span class="mx-2">email</span>
+            <v-icon id="text-grape">{{ email }}</v-icon>
+            <a
+              id="contact_link"
+              class="mx-5"
+              href="mailto:info@convinientwines.com"
+              >info@convinientwines.com</a
+            >
           </div>
-          <v-divider></v-divider>
           <div class="pa-2">
-            <v-icon id="text-grape">{{phone}}</v-icon>
-            <span class="mx-2">office</span>
+            <v-icon id="text-grape">{{ phone }}</v-icon>
+            <a id="contact_link" class="mx-5" href="tel: (+39) 0422 844061"
+              >(+39) 0422 844061</a
+            >
           </div>
-          <v-divider></v-divider>
           <div class="pa-2">
-            <v-icon id="text-grape">{{cell}}</v-icon>
-            <span class="mx-2">
-              <a href="tel: +39 327 5482914">+39 327 5482914</a>
-            </span>
+            <v-icon id="text-grape">{{ cell }}</v-icon>
+            <a id="contact_link" class="mx-5" href="tel: (+39) 348 816 4092"
+              >(+39) 348 816 4092</a
+            >
           </div>
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="6" lg="6">
-        <v-card class="pa-2" flat>
+        <v-card id="text-grape" class="pa-2" flat>
           <p>Via G.D'Annunzio 28</p>
           <p>Biancade</p>
           <p>31056 Treviso (TV)</p>
@@ -50,6 +55,11 @@ export default {
 p {
   padding: 0;
   margin: 0;
-  font-family: Playfair;
+}
+#contact_link {
+  color: #6f1d32;
+}
+a {
+  text-decoration: none;
 }
 </style>

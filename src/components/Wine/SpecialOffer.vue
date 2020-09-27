@@ -1,11 +1,6 @@
 <template>
   <div>
-    <v-container class="offers_anchor">
-      <v-row class="pa-2">
-        <v-col>
-          <span  id="playfair-regular-grape"><u>Special Offers</u></span>
-        </v-col>
-      </v-row>
+    <v-container>
       <v-row>
         <v-col
           cols="12"
@@ -14,6 +9,7 @@
           lg="6"
           v-for="offer in offers.special_offers"
           :key="offer.id"
+          data-aos="fade-right"
         >
           <v-card flat class="pa-2">
             <v-icon class="mx-1" id="text-grape" size="20">{{ arrow }}</v-icon>
@@ -46,12 +42,7 @@ export default {
 </script>
 
 <style scoped>
-.offers_anchor {
-  position: relative;
-  top: 70px;
-  margin-top: -70px;
-  overflow: hidden;
-}
+
 #from_style {
   font-size: 12px;
   color: gray;

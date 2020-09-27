@@ -11,14 +11,6 @@
         </v-col>
       </v-row>
     </v-container>
-    <div class="pa-0 my-0" id="specialoffers">
-      <SpecialOffer :offers="Data"></SpecialOffer>
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <div class="pa-0 my-0" id="region">
       <WineList :wines="Data"></WineList>
     </div>
@@ -39,13 +31,11 @@
 </template>
 
 <script>
-import SpecialOffer from "@/components/Wine/SpecialOffer";
 import WineList from "@/components/Wine/WineList";
 import OtherProducts from "@/components/Wine/OtherProducts";
 import Data from "../data/data";
 export default {
   components: {
-    SpecialOffer,
     WineList,
     OtherProducts,
   },
@@ -56,10 +46,6 @@ export default {
 </script>
 
 <style scoped>
-#specialoffers {
-  padding: 0;
-  margin: 0;
-}
 #region {
   padding: 0;
   margin: 0;

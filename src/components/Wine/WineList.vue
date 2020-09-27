@@ -15,7 +15,7 @@
         v-for="wine_info in wines.wine_list"
         :key="wine_info.id"
       >
-        <v-card height="100%" class="pa-1">
+        <v-card data-aos="fade-up"  height="100%" class="pa-1">
           <v-row>
             <v-col class="text-center">
               <span id="playfair-regular-grape" class="pa-2">{{
