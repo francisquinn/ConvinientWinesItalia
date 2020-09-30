@@ -29,7 +29,7 @@
       <v-col cols="12" sm="6" md="6" lg="6">
         <v-card id="text-grape" class="pa-2" flat>
           <p>Via G.D'Annunzio 28</p>
-          <p>Biancade</p>
+          <p>Roncade</p>
           <p>31056 Treviso (TV)</p>
           <p>Italia</p>
         </v-card>

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <!-- Large screen text to the left, picture to the right -->
-    <v-container v-if="`${this.$vssWidth}` > 600" class="about_anchor">
+    <v-container class="about_anchor">
       <v-row>
         <v-col class="text-center">
           <v-card flat class="pa-2">
@@ -11,65 +10,80 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-row align="center" justify="center">
+      <v-row justify="center" align="center">
+        <v-col data-aos="fade-right" cols="12" sm="6" md="6" lg="5">
+          <v-card flat>
+            <v-img :src="info.about_image" :lazy-src="info.about_image">
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
+          </v-card>
+        </v-col>
         <v-col
           data-aos="fade-right"
+          v-if="`${this.$vssWidth}` > 600"
           cols="12"
           sm="6"
           md="6"
           lg="7"
-          order="first"
         >
-          <v-card flat class="pa-2" id="playfair-regular" v-html="info.about">
-            <span></span>
-          </v-card>
+          <v-card
+            flat
+            id="playfair-regular"
+            class="pa-2"
+            v-html="info.about"
+          ></v-card>
         </v-col>
-        <v-col data-aos="fade-left" cols="12" sm="6" md="6" lg="5" order="last">
-          <v-card flat>
-            <v-img :src="info.about_image" :lazy-src="info.about_image">
-              <template v-slot:placeholder>
-                <v-row class="fill-height ma-0" align="center" justify="center">
-                  <v-progress-circular
-                    indeterminate
-                    color="grey lighten-5"
-                  ></v-progress-circular>
-                </v-row>
-              </template>
-            </v-img>
+        <v-col
+          data-aos="fade-right"
+          v-if="`${this.$vssWidth}` <= 600"
+          cols="12"
+          sm="6"
+          md="6"
+          lg="7"
+        >
+          <v-card
+            v-if="!readMore"
+            id="playfair-regular"
+            flat
+            class="pa-2"
+            v-html="info.about.slice(0, 280) + '...'"
+          >
           </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
-
-    <!-- Small screen picture first, text last -->
-    <v-container v-if="`${this.$vssWidth}` <= 600" class="about_anchor">
-      <v-row>
-        <v-col class="text-center">
-          <v-card flat class="pa-2">
-            <v-divider></v-divider>
-            <span class="pa-3" id="playfair-semibold-it">About</span>
-            <v-divider></v-divider>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row align="center" justify="center">
-        <v-col data-aos="fade-right" cols="12" sm="6" md="6" lg="6" order="last">
-          <v-card id="playfair-regular" flat class="pa-2" v-html="info.about">
-          </v-card>
-        </v-col>
-        <v-col data-aos="fade-left" cols="12" sm="6" md="6" lg="6" order="first">
-          <v-card flat>
-            <v-img :src="info.about_image" :lazy-src="info.about_image">
-              <template v-slot:placeholder>
-                <v-row class="fill-height ma-0" align="center" justify="center">
-                  <v-progress-circular
-                    indeterminate
-                    color="grey lighten-5"
-                  ></v-progress-circular>
-                </v-row>
-              </template>
-            </v-img>
-          </v-card>
+          <v-card
+            flat
+            id="playfair-regular"
+            class="pa-2"
+            v-if="readMore"
+            v-html="info.about"
+          ></v-card>
+          <v-row class="ma-0 pa-0">
+            <v-col class="text-center">
+              <v-btn
+                id="playfair-regular"
+                class="blue--text ma-0 pa-0"
+                text
+                v-show="!readMore"
+                @click="readMore = true"
+                >Read more</v-btn
+              >
+              <v-btn
+                id="playfair-regular"
+                class="red--text"
+                text
+                v-show="readMore"
+                v-if="readMore"
+                @click="readMore = false"
+                >Close</v-btn
+              >
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-container>
@@ -84,6 +98,10 @@ export default {
       type: Object,
     },
   },
+  data: () => ({
+    readMore: false,
+  }),
+
   mixins: [VueScreenSize.VueScreenSizeMixin],
 };
 </script>
@@ -92,5 +110,6 @@ export default {
 .about_anchor {
   position: relative;
   top: 70px;
+  margin-top: -70px;
 }
 </style>

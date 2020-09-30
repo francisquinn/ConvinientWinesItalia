@@ -1,13 +1,13 @@
 <template>
   <div>
-    <!-- Large screen center -->
-    <v-container data-aos="fade-down"  fluid>
+    
+    <v-container v-if="`${this.$vssWidth}` > 600" data-aos="fade-down"  fluid>
       <v-row
         id="logo_picture_large"
         class="white"
         justify="center"
         align="center"
-        v-if="`${this.$vssWidth}` > 600"
+        
       >
         <v-col cols="12" lg="12" class="text-center">
           <v-card flat>
@@ -23,14 +23,16 @@
       </v-row>
     </v-container>
 
-<!-- small screen center -->
-    <v-container data-aos="fade-down" fluid >
+
+
+ <!--small screen center -->
+    <v-container v-if="`${this.$vssWidth}` <= 600" data-aos="fade-down" fluid >
       <v-row
         id="logo_picture_small"
         class="white"
         justify="center"
         align="center"
-        v-if="`${this.$vssWidth}` <= 600"
+        
       >
         <v-col cols="12" lg="12" class="text-center">
           <v-card flat>

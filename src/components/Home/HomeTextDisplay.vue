@@ -1,11 +1,11 @@
 <template>
   <div>
-    <!-- Large text for computer -->
+     
     <v-container v-if="`${this.$vssWidth}` > 870" fluid>
       <v-row justify="center" align="center">
         <v-col class="text-center" cols="12" sm="6" md="6" lg="6">
-          <v-card flat id="black-text"  class="pa-4">
-            <span id="home_paragraph_large">{{info.home_paragraph}}</span>
+          <v-card flat id="black-text" class="pa-4">
+            <span id="home_paragraph_large">{{ info.home_paragraph }}</span>
           </v-card>
           <v-row justify="center" align="center">
             <v-card flat id="text-grape">
@@ -13,14 +13,21 @@
             </v-card>
           </v-row>
         </v-col>
-        <v-col data-aos="fade-down"  cols="12" sm="6" md="6" lg="6">
-          <v-row class="pa-3" v-for="points in info.home_bullet_points" :key="points.id">
+        <v-col data-aos="fade-down" cols="12" sm="6" md="6" lg="6">
+          <v-row
+            class="pa-3"
+            v-for="points in info.home_bullet_points"
+            :key="points.id"
+          >
             <v-col cols="1" sm="1" md="1" lg="1">
-              <v-icon id="text-grape" size="40">{{arrow}}</v-icon>
+              <v-icon id="text-grape" size="40">{{ arrow }}</v-icon>
             </v-col>
-            <v-col  cols="11" sm="11" md="11" lg="11">
-              <v-card flat id="black-text" >
-              <span id="home_bullet_points_large" v-html="points.point"></span>
+            <v-col cols="11" sm="11" md="11" lg="11">
+              <v-card flat id="black-text">
+                <span
+                  id="home_bullet_points_large"
+                  v-html="points.point"
+                ></span>
               </v-card>
             </v-col>
           </v-row>
@@ -28,12 +35,14 @@
       </v-row>
     </v-container>
 
-    <!-- Small text for phone -->
+    
+
+
     <v-container v-if="`${this.$vssWidth}` <= 870" fluid>
       <v-row justify="center" align="center">
         <v-col class="text-center" cols="12" sm="6" md="6" lg="6">
           <v-card flat id="black-text" class="pa-4">
-            <span id="home_paragraph_small">{{info.home_paragraph}}</span>
+            <span id="home_paragraph_small">{{ info.home_paragraph }}</span>
           </v-card>
           <v-row justify="center" align="center">
             <v-card flat id="text-grape">
@@ -42,9 +51,13 @@
           </v-row>
         </v-col>
         <v-col data-aos="fade-down" cols="12" sm="6" md="6" lg="6">
-          <v-row class="pa-3" v-for="points in info.home_bullet_points" :key="points.id">
-            <v-col  cols="1" sm="1" md="1" lg="1">
-              <v-icon id="text-grape" >{{arrow}}</v-icon>
+          <v-row
+            class="pa-3"
+            v-for="points in info.home_bullet_points"
+            :key="points.id"
+          >
+            <v-col cols="1" sm="1" md="1" lg="1">
+              <v-icon id="text-grape">{{ arrow }}</v-icon>
             </v-col>
             <v-col id="black-text" cols="10" sm="10" md="10" lg="10">
               <span id="home_bullet_points_small" v-html="points.point"></span>
@@ -53,14 +66,13 @@
         </v-col>
       </v-row>
     </v-container>
-
     
   </div>
 </template>
 
 <script>
 import VueScreenSize from "vue-screen-size";
-import { mdiChevronRight } from '@mdi/js'; 
+import { mdiChevronRight } from "@mdi/js";
 export default {
   props: {
     info: {
@@ -99,5 +111,4 @@ ol {
   font-size: 20px;
   font-family: Playfair;
 }
-
 </style>

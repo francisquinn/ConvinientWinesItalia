@@ -12,7 +12,6 @@
 <script>
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import VueScreenSize from "vue-screen-size";
 export default {
   name: 'App',
 
@@ -24,7 +23,6 @@ export default {
   data: () => ({
     //
   }),
-  mixins: [VueScreenSize.VueScreenSizeMixin],
 };
 </script>
 

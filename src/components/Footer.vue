@@ -6,7 +6,7 @@
           <v-col cols="12" sm="6" md="4" lg="4">
             <v-card flat class="pa-2" id="background-grape">
               <p>Via G.D'Annunzio 28</p>
-              <p>Biancade</p>
+              <p>Roncade</p>
               <p>31056 Treviso (TV)</p>
               <p>Italia</p>
               <br />
@@ -54,7 +54,7 @@
             <v-row>
               <v-col id="playfair-regular" class="text-center">
                 <span class="white--text" id="footer-text"
-                  >Convinient Wines Italia di Gerard Leonelli</span
+                  >Convinient Wines Italia di Gerard Peter Leonelli</span
                 >
                 <br />
                 <br />
@@ -78,10 +78,10 @@
             </v-row>
           </v-col>
 
-          <v-col class="text-center" cols="12" sm="12" md="12" lg="12">
+          <v-col  id="playfair-regular" class="text-center" cols="12" sm="12" md="12" lg="12">
             <v-divider class="white"></v-divider>
             <v-card id="background-grape" flat class="pa-3">
-              <span>copyright</span>
+              <span class="white--text" id="footer-text">Convinient Wines Italia&nbsp;&reg;&nbsp;All rights reserved</span>
             </v-card>
           </v-col>
         </v-row>

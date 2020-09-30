@@ -12,7 +12,7 @@ import ContactIcons from "@/components/Contact/ContactIcons";
 export default {
   components: {
     ContactForm,
-    ContactIcons,
+    ContactIcons
   },
 };
 </script>

@@ -2,7 +2,6 @@
   <nav>
     <!-- Large screen Laptop / Tablet -->
     <v-app-bar
-      scroll-threshold="500"
       elevate-on-scroll
       app
       fixed
@@ -83,6 +82,7 @@
             </v-row>
           </template>
         </v-img>
+        
       </router-link>
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon
@@ -163,10 +163,24 @@
               >
             </v-list-item-content>
           </template>
+          <v-list-item class="white--text" router to="/wines/specialoffers">
+            <v-list-item-content>
+              <v-list-item-title id="playfair-regular" class="white--text"
+                >Special Offers</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
           <v-list-item class="white--text" router to="/wines/#region">
             <v-list-item-content>
               <v-list-item-title id="playfair-regular" class="white--text"
-                >By region</v-list-item-title
+                >By Region</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item class="white--text" router to="/wines/#otherproducts">
+            <v-list-item-content>
+              <v-list-item-title id="playfair-regular" class="white--text"
+                >Other Products</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -186,7 +200,7 @@
       <template v-slot:append>
         <v-card id="background-grape" flat class="pa-2">
           <v-card-text class="text-center white--text">
-            <span id="playfair-regular">
+            <span class="white--text" id="playfair-regular">
               {{ new Date().getFullYear() }} — Convinient Wines Italia
             </span>
           </v-card-text>
@@ -222,7 +236,14 @@ export default {
 </script>
 
 <style scoped>
+.v-application .primary--text{
+  color: white !important;
+}
 .v-list-group--active{
+  background-color:inherit;
+  color:inherit;
+}
+.mdi-chevron-down{
   color: red;
 }
 #link {
