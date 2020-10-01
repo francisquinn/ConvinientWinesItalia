@@ -14,7 +14,7 @@
     <form
       data-aos="fade-up"
       class="pa-2"
-      action="https://formspree.io/mdowjzol"
+      action="https://formspree.io/f/mrgobyok"
       method="POST"
     >
       <!-- Full name and email -->
