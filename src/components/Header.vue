@@ -177,7 +177,7 @@
               >
             </v-list-item-content>
           </v-list-item>
-          <v-list-item class="white--text" router to="/wines/#otherproducts">
+          <v-list-item class="white--text" router to="/wines/otherproducts">
             <v-list-item-content>
               <v-list-item-title id="playfair-regular" class="white--text"
                 >Other Products</v-list-item-title
@@ -228,7 +228,7 @@ export default {
     wine_links: [
       { id: 1, text: "Special Offers", route: "/wines/specialoffers" },
       { id: 2, text: "By Region", route: "/wines/#region" },
-      { id: 3, text: "Other Products", route: "/wines/#otherproducts" },
+      { id: 3, text: "Other Products", route: "/wines/otherproducts" },
     ],
   }),
   mixins: [VueScreenSize.VueScreenSizeMixin],

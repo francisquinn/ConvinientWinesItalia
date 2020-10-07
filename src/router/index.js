@@ -5,6 +5,7 @@ import Contact from "../views/Contact";
 import Services from "../views/Services";
 import Wines from "../views/Wines";
 import Offers from "../views/Offers";
+import OtherProducts from "../views/OtherProducts"
 import ErrorPage from "../views/Error";
 
 Vue.use(VueRouter);
@@ -29,6 +30,11 @@ const routes = [
     path: "/wines/specialoffers",
     name: "Offers",
     component: Offers,
+  },
+  {
+    path: "/wines/otherproducts",
+    name: "OtherProducts",
+    component: OtherProducts,
   },
   {
     path: "/contact",

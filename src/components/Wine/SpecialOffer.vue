@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container>
-      <v-row>
+      <v-row data-aos="fade-right">
         <v-col
           cols="12"
           sm="6"
@@ -9,7 +9,6 @@
           lg="6"
           v-for="offer in offers.special_offers"
           :key="offer.id"
-          data-aos="fade-right"
         >
           <v-card flat class="pa-2">
             <v-icon class="mx-1" id="text-grape" size="20">{{ arrow }}</v-icon>

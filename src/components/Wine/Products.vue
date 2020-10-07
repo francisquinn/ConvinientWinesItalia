@@ -1,10 +1,5 @@
 <template>
-  <v-container class="otherproducts_anchor">
-    <v-row class="pa-2">
-      <v-col>
-        <span id="playfair-regular-grape"><u>Other Products</u></span>
-      </v-col>
-    </v-row>
+  <v-container>
     <v-row data-aos="fade-right" >
       <v-col
         cols="12"
@@ -39,10 +34,5 @@ export default {
 </script>
 
 <style scoped>
-.otherproducts_anchor {
-  position: relative;
-  top: 70px;
-  margin-top: -70px;
-}
 
 </style>
