@@ -30,6 +30,7 @@
                   >(+39) 348 816 4092</a
                 >
               </p>
+              <p class="pa-1">P.IVA & CF: IT0211050281</p>
             </v-card>
           </v-col>
 
@@ -65,7 +66,7 @@
                   title="Privacy Policy"
                   >Privacy Policy</a
                 >
-                
+
                 <a
                   id="policy_link"
                   target="_blank"
@@ -78,10 +79,20 @@
             </v-row>
           </v-col>
 
-          <v-col  id="playfair-regular" class="text-center" cols="12" sm="12" md="12" lg="12">
+          <v-col
+            id="playfair-regular"
+            class="text-center"
+            cols="12"
+            sm="12"
+            md="12"
+            lg="12"
+          >
             <v-divider class="white"></v-divider>
             <v-card id="background-grape" flat class="pa-3">
-              <span class="white--text" id="footer-text">Convinient Wines Italia&nbsp;&reg;&nbsp;All rights reserved</span>
+              <span class="white--text" id="footer-text"
+                >Convinient Wines Italia&nbsp;&reg;&nbsp;All rights
+                reserved</span
+              >
             </v-card>
           </v-col>
         </v-row>
@@ -131,7 +142,7 @@ a {
   font-size: 13px;
   padding: 13px;
 }
-#footer-text{
+#footer-text {
   font-size: 15px;
 }
 </style>
