@@ -13,7 +13,7 @@
     <v-row data-aos="fade-up" class=" pa-3" align="center" justify="center">
       <v-col class="text-center" cols="12" sm="5" md="4" lg="3">
         <v-card>
-          <v-img id="service_pic" src="/account-manager.jpg" lazy-src="/account-manager.jpg">
+          <v-img id="service_pic" src="/account-manager-min.jpg" lazy-src="/account-manager.jpg">
             <template v-slot:placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
                 <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
@@ -38,7 +38,7 @@
     <v-row data-aos="fade-up" class=" pa-3" align="center" justify="center">
       <v-col class="text-center" cols="12" sm="5" md="4" lg="3">
         <v-card>
-          <v-img id="service_pic" src="/bottles-blured.jpg" lazy-src="/bottles-blured.jpg">
+          <v-img id="service_pic" src="/bottles-blured-min.jpg" lazy-src="/bottles-blured.jpg">
             <template v-slot:placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
                 <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
@@ -63,7 +63,7 @@
     <v-row data-aos="fade-up" class="pa-3" align="center" justify="center">
       <v-col class="text-center" cols="12" sm="5" md="4" lg="3">
         <v-card>
-          <v-img id="service_pic" src="/wine-glasses.jpg" lazy-src="/wine-glasses.jpg">
+          <v-img id="service_pic" src="/wine-glasses-min.jpg" lazy-src="/wine-glasses.jpg">
             <template v-slot:placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
                 <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
